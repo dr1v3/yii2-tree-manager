@@ -639,7 +639,7 @@
                     self.raise('treeview.change', ['', '']);
                     self.raise('change');
                 } else {
-                    $node.find('li:not(.kv-disabled)').removeClass('kv-selected');
+                    //$node.find('li:not(.kv-disabled)').removeClass('kv-selected');
                 }
                 self.raise('treeview.unchecked', [nodeKey]);
             } else {
@@ -650,7 +650,7 @@
                     self.raise('treeview.change', [nodeKey, desc]);
                     self.raise('change');
                 } else {
-                    addCss($node.find('li:not(.kv-disabled)'), 'kv-selected');
+                    //addCss($node.find('li:not(.kv-disabled)'), 'kv-selected');
                 }
                 addCss($node, 'kv-selected');
                 self.raise('treeview.checked', [nodeKey]);
